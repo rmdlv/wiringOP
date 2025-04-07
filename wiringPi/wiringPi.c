@@ -14933,6 +14933,7 @@ int wiringPiSetupSys(void)
  */
 unsigned int readR(unsigned int addr)
 {
+	printf("readR(%d)", addr);
 	unsigned int val = 0;
 	unsigned int mmap_base;
 	unsigned int mmap_seek;
